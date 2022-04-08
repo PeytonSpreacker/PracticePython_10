@@ -11,7 +11,15 @@ overlap = list()
 list1 = random.sample(range(0,51), 12)
 list2 = random.sample(range(0,51), 16)
 
-# using lists a and b
+# using a and b
+# overlap = [i for i in a if i in b]
+# # print(overlap)
+# results = [i for i in overlap if overlap.count(i) == 1]
+# if len(results) == 0:
+#     print('No overlaps.')
+# print(results)
+
+# using list1 and list 2 (randomly generated)
 overlap = [i for i in list1 if i in list2]
 # print(overlap)
 results = [i for i in overlap if overlap.count(i) == 1]
